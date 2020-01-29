@@ -1,5 +1,5 @@
 # Phyllotaxis(α=137.5◦)
-[AlgorithmicBotany](http://mathworld.wolfram.com/Rose.html)
+[Algorithmic Botany](http://algorithmicbotany.org/papers/abop/abop-ch4.pdf)
 
 [Wikipedia](https://en.wikipedia.org/wiki/Phyllotaxis)
 
