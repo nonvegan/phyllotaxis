@@ -32,7 +32,7 @@ function clear() {
 function draw() {
     r = c * Math.pow(n, 0.5)
     angle = n * α
-    ctx.fillStyle = hsvToRgb((toDegrees(angle) - r) % 360, 100, 100).hex()
+    ctx.fillStyle = hsvToRgb((toDegrees(angle) - r) % 360, 85, 100).hex()
     ctx.beginPath()
     ctx.ellipse(Math.cos(angle) * r, Math.sin(angle) * r, 3, 3, 0, 0, Math.PI * 2, false)
     ctx.fill()
@@ -40,6 +40,6 @@ function draw() {
 }
 
 setInterval(() => {
-    if (n < 20000)
+    if (n < 25000)
         draw()
 }, getMs(144));
