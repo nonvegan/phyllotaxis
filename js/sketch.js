@@ -21,7 +21,7 @@ canvas.height = height
 ctx.translate(center.x, center.y)
 
 let n = 1
-let c = 7
+let c = 5
 let α = toRadians(137.5)
 let angle
 
@@ -32,9 +32,9 @@ function clear() {
 function draw() {
     r = c * Math.pow(n, 0.5)
     angle = n * α
-    ctx.fillStyle = hsvToRgb((angle * 180 / Math.PI - r) % 360, 100, 100).hex()
+    ctx.fillStyle = hsvToRgb((toDegrees(angle) - r) % 360, 100, 100).hex()
     ctx.beginPath()
-    ctx.ellipse(Math.cos(angle) * r, Math.sin(angle) * r, 5, 5, 0, 0, Math.PI * 2, false)
+    ctx.ellipse(Math.cos(angle) * r, Math.sin(angle) * r, 3, 3, 0, 0, Math.PI * 2, false)
     ctx.fill()
     n++
 }
