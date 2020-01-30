@@ -118,5 +118,12 @@
          Math.round(r * 255),
          Math.round(g * 255),
          Math.round(b * 255))
+ }
 
+ function restrain(val, min, max) {
+     if (val > max)
+         return max
+     if (val < min)
+         return min
+     return val
  }
